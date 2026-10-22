@@ -6,7 +6,7 @@
       "descricao": "Vestido midi em laise com caimento leve e alças reguláveis, perfeito para o verão.",
       "preco": 189.90,
       "categoria": "Roupas",
-      "imagem": "https://unsplash.com",
+      "imagem": "01-vestido-midi-fluido.svg",
       "estoque": 5
     },
     {
@@ -15,7 +15,7 @@
       "descricao": "Blazer estruturado com corte moderno e forro acetinado, ideal para o trabalho ou eventos.",
       "preco": 249.90,
       "categoria": "Roupas",
-      "imagem": "https://unsplash.com",
+      "imagem": "02-blazer-alfaiataria-slim.svg",
       "estoque": 3
     },
     {
@@ -24,7 +24,7 @@
       "descricao": "Calça jeans de cintura alta com lavagem clássica e modelagem ampla ultra confortável.",
       "preco": 159.90,
       "categoria": "Roupas",
-      "imagem": "https://unsplash.com",
+      "imagem": "03-calca-wide-leg-jeans.svg",
       "estoque": 7
     },
     {
@@ -33,7 +33,7 @@
       "descricao": "Camisa 100% linho respirável com botões de madrepérola e modelagem comfy.",
       "preco": 139.90,
       "categoria": "Roupas",
-      "imagem": "https://unsplash.com",
+      "imagem": "04-camisa-de-linho-premium.svg",
       "estoque": 6
     },
     {
@@ -42,7 +42,7 @@
       "descricao": "Sandália em couro legítimo com salto bloco médio que garante elegância e estabilidade o dia todo.",
       "preco": 179.90,
       "categoria": "Calçados",
-      "imagem": "https://unsplash.com",
+      "imagem": "05-sandalia-salto-bloco.svg",
       "estoque": 4
     },
     {
@@ -51,7 +51,7 @@
       "descricao": "Sapatilha clássica com palmilha acolchoada e acabamento em camurça macia.",
       "preco": 119.90,
       "categoria": "Calçados",
-      "imagem": "https://unsplash.com",
+      "imagem": "06-sapatilha-bico-fino-confort.svg",
       "estoque": 8
     },
     {
@@ -60,7 +60,7 @@
       "descricao": "Tênis casual branco com solado plataforma reto, combinando com saias, vestidos e jeans.",
       "preco": 199.90,
       "categoria": "Calçados",
-      "imagem": "https://unsplash.com",
+      "imagem": "07-tenis-casual-platform.svg",
       "estoque": 5
     },
     {
@@ -69,7 +69,7 @@
       "descricao": "Bota de cano curto com zíper lateral e salto geométrico, ideal para composições de outono.",
       "preco": 289.00,
       "categoria": "Calçados",
-      "imagem": "https://unsplash.com",
+      "imagem": "08-bota-ankle-boot-couro.svg",
       "estoque": 2
     },
     {
@@ -78,7 +78,7 @@
       "descricao": "Bolsa grande estruturada com divisórias internas e alça transversal removível.",
       "preco": 329.90,
       "categoria": "Acessórios",
-      "imagem": "https://unsplash.com",
+      "imagem": "09-bolsa-tote-de-couro.svg",
       "estoque": 4
     },
     {
@@ -87,7 +87,7 @@
       "descricao": "Óculos de sol com armação de acetato tartaruga e proteção UV400 nas lentes.",
       "preco": 89.90,
       "categoria": "Acessórios",
-      "imagem": "https://unsplash.com",
+      "imagem": "10-oculos-de-sol-vintage-cat-eye.svg",
       "estoque": 12
     },
     {
@@ -96,7 +96,7 @@
       "descricao": "Cinto fino de couro legítimo com fivela dourada minimalista para marcar a cintura.",
       "preco": 59.90,
       "categoria": "Acessórios",
-      "imagem": "https://unsplash.com",
+      "imagem": "11-cinto-de-couro-fivela-gold.svg",
       "estoque": 15
     },
     {
@@ -105,7 +105,7 @@
       "descricao": "Par de brincos de argola com design abaulado e banho de ouro 18k antialérgico.",
       "preco": 45.00,
       "categoria": "Acessórios",
-      "imagem": "https://unsplash.com",
+      "imagem": "12-brinco-de-argola-orgânica.svg",
       "estoque": 20
     }
   ]
