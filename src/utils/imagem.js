@@ -1,3 +1,3 @@
-export function CaminhoDaImagem(nomeImagem) {
-    return new URL(`../../assets/img/${nomeImagem}`, import.meta.url).href;
+export function caminhoDaImagem(nomeDoArquivo) {
+    return new URL(`../../assets/img/${nomeDoArquivo}`, import.meta.url).href;
 }
