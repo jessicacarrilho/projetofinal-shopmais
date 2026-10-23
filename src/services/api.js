@@ -1,28 +1,27 @@
-import dadosLocais from '../../db.json';
+import db from '../../db.json';
 
-const USAR_API = import.meta.env.VITE_USAR_API === 'true';
-const API_URL = import.meta.env.VITE_USAR_URL ?? 'http://localhost:3001';
+const USAR_API = import.meta.env.VITE_USAR_API === 'true'
+const BASE_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:3001'
 
-export async function buscarProdutos() {
-    if (!USAR_API)
-        return dadosLocais.produtos;
-    const resposta = await fetch(`${API_URL}/produtos`);
-    if (!resposta.ok) {
-        throw new Error(`Erro ao buscar produtos (status ${resposta.status})`);
+function lerDoDbLocal(endpoint) {
+    const [colecao, id] = endpoint.split('/')
+    const lista = db[colecao] ?? []
+    if (!id) {
+        return lista
     }
-    return await resposta.json();
+    return lista.find((item) => String(item.id) === id) ?? null
 }
-
-export async function buscarProdutoPorId(id) {
+export async function apiGet(endpoint) {
     if (!USAR_API) {
-        return dadosLocais.produtos.find((produto) => produto.id === String(id)) ?? null;
+        return lerDoDbLocal(endpoint)
     }
 
-    const resposta = await fetch(` ${API_URL}/produtos/${encodeURIComponent(id)}`);
-    if (resposta.status === 404) 
-        return null;
-    if (!resposta.ok) {
-        throw new Error (`Erro ao buscar o produto ${id} (status ${resposta.status})`);
+    const response = await fetch(`${BASE_URL}/${endpoint}`)
+    if (response.status === 404) {
+        return null
     }
-    return resposta.json();
+    if(!response.ok) {
+        throw new Error(`Erro ao buscar ${endpoint}: ${response.status}`)
+    }
+    return response.json()
 }
