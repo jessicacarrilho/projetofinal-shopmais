@@ -1,0 +1,9 @@
+.preco {
+    font-weight: 700;
+    color: var(--cor-primaria-escura);
+    white-space: nowrap;
+}
+
+.grande {
+    font-size: 1.6rem;
+}
