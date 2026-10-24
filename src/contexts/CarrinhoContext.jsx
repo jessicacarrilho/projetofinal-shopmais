@@ -56,7 +56,7 @@ export function CarrinhoProvider({ children }) {
     const valorTotal = useMemo(() => calcularValorTotal(itens), [itens])
 
     return (
-        <CarrinhoContext.provider value={{
+        <CarrinhoContext.Provider value={{
             itens,
             adicionarItem,
             alterarQuantidade,
@@ -67,7 +67,7 @@ export function CarrinhoProvider({ children }) {
             valorTotal,
         }}>
             {children}
-        </CarrinhoContext.provider>
+        </CarrinhoContext.Provider>
     )
 
 }
