@@ -1,0 +1,33 @@
+.pagina {
+    max-width: var(--largura-maxima);
+    margin: 0 auto;
+    padding: 1.5rem 1rem 3rem;
+}
+
+.topo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.titulo {
+    font-size: 1.8rem;
+}
+
+.subtitulo {
+    margin: 0.25rem 0 0;
+    color: var(--cor-texto-suave);
+}
+
+@media (min-width: 768px) {
+    .topo {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .titulo {
+        font-size: 2.2rem;
+    }
+}
