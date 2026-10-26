@@ -1,0 +1,14 @@
+.mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.texto {
+    margin: 0;
+    font-size: 1.05rem;
+    color: var(--cor-texto-suave);
+}
