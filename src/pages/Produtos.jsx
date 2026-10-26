@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import Botao from '../components/atoms/Botao'
 import CampoBusca from '../components/atoms/CampoBusca'
-import Mensagem from '../components/atoms/mensagem'
+import Mensagem from '../components/atoms/Mensagem'
 import ListaProdutos from '../components/organisms/ListaProdutos'
 import { useProdutos } from '../hooks/useProdutos'
 import { filtrarProdutos } from '../utils/busca'
@@ -22,7 +22,7 @@ function Produtos() {
     }, [])
 
     const produtosFiltrados = useMemo(
-    () => filtrarProdutos(produtos.termo),
+    () => filtrarProdutos(produtos, termo), [produtos, termo]
 )
 
 function limparBusca() {
@@ -43,7 +43,6 @@ function renderizarConteudo() {
         </Botao>
         </Mensagem> )
     }
-}
 
 return <ListaProdutos produtos={produtosFiltrados} />
 
@@ -62,6 +61,7 @@ return (
         {renderizarConteudo()}
     </section>
 )
+}
 
 export default Produtos
 
