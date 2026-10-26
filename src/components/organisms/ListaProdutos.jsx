@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import ProdutoCard from '../molecules/ProdutoCard'
 import { useCarrinho } from '../../hooks/useCarrinho'
 import { produtoShape } from '../../utils/propTypes'
-import styles from './ListaProdutos.modules.css'
+import styles from './ListaProdutos.module.css'
 
 
 //Grade de produtos: faz o map da lista criando um ProdutoCard para cada item

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import Alert from '@mui/material/Alert'
-import CircularProgress from './Mensagem.module.css'
+import CircularProgress from '@mui/material/CircularProgress'
 import styles from './Mensagem.module.css'
 
 //Mensagens de estado da tela

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { formatarMoeda } from '../../utils/moeda'
-import styles from './preco.module.css'
+import styles from './Preco.module.css'
 
 function Preco({ valor, tamanho = 'normal' }) {
     const classe = tamanho === 'grande' ? `${styles.preco} ${styles.grande}` : styles.preco

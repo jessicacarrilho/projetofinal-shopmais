@@ -19,7 +19,7 @@ function CampoBusca({ valor, onMudar, ref }) {
     )
 }
 
-CampoBusca.PropTypes = {
+CampoBusca.propTypes = {
     valor: PropTypes.string.isRequired,
     onMudar: PropTypes.func.isRequired,
     ref: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),

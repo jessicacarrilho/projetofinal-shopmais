@@ -3,7 +3,7 @@ import Botao from '../atoms/Botao'
 import Preco from '../atoms/Preco'
 import { caminhoDaImagem } from '../../utils/imagem'
 import { produtoShape } from '../../utils/propTypes'
-import styles from '.ProdutoCard.module.css'
+import styles from './ProdutoCard.module.css'
 
 //Card de um produto na vitrine
 
@@ -13,7 +13,7 @@ function ProdutoCard({ produto, quantidadeNoCarrinho = 0, onAdicionar }) {
 
     let textoDoBotao = 'Adicionar ao carrinho'
     if (esgotado) {
-        textoDoBotao = 'esgotado'
+        textoDoBotao = 'Esgotado'
         } else if (limiteAtingido) {
             textoDoBotao = 'Limite do estoque'
         }
