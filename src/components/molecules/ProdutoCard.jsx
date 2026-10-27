@@ -21,7 +21,7 @@ function ProdutoCard({ produto, quantidadeNoCarrinho = 0, onAdicionar }) {
 
         return (
             <article className={styles.card}>
-                <Link to={`/produtos/${Produtos.id}`} tabIndex={-1} aria-hidden={true}>
+                <Link to={`/produtos/${produto.id}`} tabIndex={-1} aria-hidden={true}>
                 <img src={caminhoDaImagem(produto.imagem)}
                 alt={produto.nome}
                 className={styles.imagem}
