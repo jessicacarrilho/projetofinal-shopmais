@@ -1,0 +1,87 @@
+.detalhe {
+    max-width: var(--largura-maxima);
+    margin: 0 auto;
+    padding: 1.5rem 1rem 3rem;
+}
+
+.voltar {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.voltar:hover {
+    text-decoration: underline;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.imagem {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    aspect-ratio: 3 / 4;
+    object-fit: contain;
+    background-color: #f6f1ec;
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+
+.categoria {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.6em;
+    color: var(--cor-texto-suave);
+}
+
+.nome {
+    font-size: 1.8rem;
+}
+
+.descricao {
+    margin: 0;
+    max-width: 52ch;
+    color: var(--cor-texto-suave);
+}
+
+.estoque {
+    margin: 0;
+    font-weight: 600;
+    color: var(--cor-sucesso);
+}
+
+.semEstoque {
+    margin: 0;
+    font-weight: 600;
+    color: var(--cor-erro);
+}
+
+.noCarrinho {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .grade {
+        grid-template-columns: minmax(280px, 420px) 1fr;
+        gap: 2.5rem;
+        align-items: start;
+    }
+
+    .nome {
+        font-size: 2.2rem;
+    }
+}
