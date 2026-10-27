@@ -55,3 +55,13 @@
     text-align: center;
 }
 
+.linkNome {
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+.linkNome:hover {
+    color: var(--cor-primaria-escura);
+    text-decoration: underline;
+}
+

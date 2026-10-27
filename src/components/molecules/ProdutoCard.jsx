@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import Botao from '../atoms/Botao'
 import Preco from '../atoms/Preco'
 import { caminhoDaImagem } from '../../utils/imagem'
@@ -20,15 +21,19 @@ function ProdutoCard({ produto, quantidadeNoCarrinho = 0, onAdicionar }) {
 
         return (
             <article className={styles.card}>
+                <Link to={`/produtos/${Produtos.id}`} tabIndex={-1} aria-hidden={true}>
                 <img src={caminhoDaImagem(produto.imagem)}
                 alt={produto.nome}
                 className={styles.imagem}
                 loading="lazy" 
                 />
+                </Link>
 
                 <div className={styles.conteudo}>
                     <p className={styles.categoria}>{produto.categoria}</p>
-                    <h2 className={styles.nome}>{produto.nome}</h2>
+                    <h2 className={styles.nome}>
+                        <Link to={`/produtos/${produto.id}`} className={styles.linkNome}>{produto.nome}</Link>
+                        </h2>
                     <Preco valor={produto.preco} />
 
                     <Botao
