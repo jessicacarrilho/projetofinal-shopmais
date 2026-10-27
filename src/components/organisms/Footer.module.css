@@ -1,0 +1,16 @@
+.footer {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    background-color: #2b2320;
+    color: #f3ece8;
+    font-size: 0.9rem; 
+}
+
+.footer p{
+    margin: 0.2rem 0;
+}
+
+.aviso {
+    color: #c9bcb5;
+    font-size: 0.8rem;
+}
