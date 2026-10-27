@@ -1,4 +1,4 @@
-import { link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Botao from '../components/atoms/Botao'
 import styles from './Resultado.module.css'
 

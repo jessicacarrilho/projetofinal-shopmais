@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { Badge } from '@mui/material/Badge'
+import Badge from '@mui/material/Badge'
 import Logo from '../atoms/Logo'
 import { useCarrinho } from '../../hooks/useCarrinho'
 import styles from './Header.module.css'
@@ -44,3 +44,5 @@ function Header() {
         </header>
     )
 }
+
+export default Header
