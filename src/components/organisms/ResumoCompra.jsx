@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import Preco from "../atoms/Preco";
-import styles from '.ResumoCompra.module.css'
+import styles from './ResumoCompra.module.css'
 
 //Caixa com resumo da compra (peças, frete e total)
 

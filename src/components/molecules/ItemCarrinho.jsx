@@ -13,7 +13,7 @@ function ItemCarrinho({ item, onAlterarQuantidade, onRemover}) {
             <img src={caminhoDaImagem(item.imagem)} alt={item.nome} className={styles.imagem} />
 
             <div className={styles.info}>
-                <link to={`/produtos/${item.id}`} className={styles.nome}>{item.nome}</link>
+                <Link to={`/produtos/${item.id}`} className={styles.nome}>{item.nome}</Link>
                 <p className={styles.unitario}>Preço Unitário: <Preco valor={item.preco} />
                 </p>
 
