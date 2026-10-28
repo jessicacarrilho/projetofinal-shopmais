@@ -60,3 +60,19 @@
         display: inline;
     }
 }
+
+.botaoTema {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.15rem;
+    border: 1.5px solid var(--cor-borda);
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+}
+
+.botaoTema:hover {
+    background-color: var(--cor-primaria-clara);
+}

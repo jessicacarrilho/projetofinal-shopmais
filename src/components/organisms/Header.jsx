@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import Badge from "@mui/material/Badge";
 import Logo from "../atoms/Logo";
 import { useCarrinho } from "../../hooks/useCarrinho";
+import { useTema } from "../../hooks/useTema";
 import styles from "./Header.module.css";
 
 function classeDoLink({ isActive }) {
@@ -10,6 +11,8 @@ function classeDoLink({ isActive }) {
 
 function Header() {
   const { quantidadeTotal } = useCarrinho();
+  const { tema, alternarTema} = useTema()
+  const escuro = tema === 'escuro'
 
   return (
     <header className={styles.header}>
@@ -49,6 +52,18 @@ function Header() {
                 </Badge>
                 <span className={styles.textoCarrinho}>Carrinho</span>
               </NavLink>
+            </li>
+            <li>
+              <button
+              type="button"
+              className={styles.botaoTema}
+              onClick={alternarTema}
+              aria-pressed={escuro}
+              aria-label="Tema escuro"
+              title={escuro ? 'Usar tema claro' : 'Usar tema escuro'}              
+              >
+                {escuro ? '☀️' : '🌙'}
+              </button>
             </li>
           </ul>
         </nav>
