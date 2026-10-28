@@ -12,14 +12,14 @@
 
 .card:hover {
     transform:translateY(-3px);
-    box-shadow: 0 8px 22px rgba(43,35,32,0.12);
+    box-shadow: var(--sombra-forte);
 }
 
 .imagem {
     width: 100%;
     aspect-ratio: 3 / 4;
     object-fit: contain;
-    background-color: #f6f1ec;
+    background-color: var(--cor-fundo-imagem);
 }
 
 .conteudo {
