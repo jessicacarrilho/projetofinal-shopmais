@@ -1,0 +1,41 @@
+.resumo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem;
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+}
+
+.titulo {
+    font-size: 1.15rem;
+}
+
+.linhas {
+    margin: 0;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.4rem 0;
+}
+
+.linha dd {
+    margin: 0;
+    font-weight: 600;
+}
+
+.gratis {
+    color: var(--cor-sucesso);
+}
+
+.total {
+    margin-top: 0.4rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid var(--cor-borda);
+    font-size: 1.1rem;
+}
