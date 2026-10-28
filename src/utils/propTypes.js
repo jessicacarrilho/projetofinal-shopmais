@@ -9,3 +9,12 @@ export const produtoShape = PropTypes.shape({
     imagem:PropTypes.string.isRequired,
     estoque:PropTypes.number.isRequired,
 })
+
+export const itemCarrinhoShape = PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    nome: PropTypes.string. isRequired,
+    preco: PropTypes.number.isRequired,
+    imagem: PropTypes.string.isRequired,
+    estoque: PropTypes.number.isRequired,
+    quantidade: PropTypes.number.isRequired,
+})
