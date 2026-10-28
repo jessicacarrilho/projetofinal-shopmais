@@ -27,7 +27,7 @@
     margin: 0 auto;
     aspect-ratio: 3 / 4;
     object-fit: contain;
-    background-color: #f6f1ec;
+    background-color: var(--cor-fundo-imagem);
     border: 1px solid var(--cor-borda);
     border-radius: var(--raio);
 }

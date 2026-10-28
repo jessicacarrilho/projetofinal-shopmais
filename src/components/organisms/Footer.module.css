@@ -1,8 +1,8 @@
 .footer {
     padding: 1.5rem 1rem;
     text-align: center;
-    background-color: #2b2320;
-    color: #f3ece8;
+    background-color: var(--cor-rodape);
+    color: var(--cor-rodape-texto);
     font-size: 0.9rem; 
 }
 
@@ -11,6 +11,6 @@
 }
 
 .aviso {
-    color: #c9bcb5;
+    color: var(--cor-rodape-suave);
     font-size: 0.8rem;
 }
