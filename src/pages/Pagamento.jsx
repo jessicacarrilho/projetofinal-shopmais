@@ -1,14 +1,14 @@
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
 import { Link } from "react-router-dom";
-import { TextField } from "@mui/material/TextField";
-import { Botao } from '../components/atoms/Botao'
-import { ResumoCompra } from '../components/organisms/ResumoCompra'
-import { useCarrinho } from "../hooks/useCarrinho";
-import { usePagamento } from "../hooks/usePagamento";
-import { pagamentoSchema } from "../utils/pagamento";
+import TextField from '@mui/material/TextField';
+import Botao from '../components/atoms/Botao'
+import ResumoCompra from '../components/organisms/ResumoCompra';
+import { useCarrinho } from '../hooks/useCarrinho';
+import { usePagamento } from '../hooks/usePagamento';
+import { pagamentoSchema } from '../utils/pagamento';
 import styles from './Pagamento.module.css'
-import { maxLength } from "zod";
+
 
 // Pagina /pagamento.(rota privada)
 
@@ -45,16 +45,16 @@ function Pagamento() {
             <h1 className={styles.titulo}>Pagamento</h1>
 
             <div className={styles.layout}>
-                <form className={styles.fomulario} onSubmit={handleSubmit(finalizarCompra)} noValidate>
+                <form className={styles.formulario} onSubmit={handleSubmit(finalizarCompra)} noValidate>
                     <fieldset className={styles.campos} disabled={processando}>
                         <legend className={styles.legenda}>Dados do cartão</legend>
 
-                        <TextField label="Nome do titular" fullwidth autoComplete="off" {...propsDoCampo('titular')} />
+                        <TextField label="Nome do titular" fullWidth autoComplete="off" {...propsDoCampo('titular')} />
 
                         <TextField
                         label="Número do cartão"
                         placeholder="0000 0000 0000 0000"
-                        fullwidth autoComplete="off"
+                        fullWidth autoComplete="off"
                         slotProps={{ htmlInput: { inputMode: 'numeric', maxLength: 19 } }}
                         {...propsDoCampo('numeroCartao')} />
 
@@ -62,14 +62,14 @@ function Pagamento() {
                             <TextField
                             label="Validade"
                             placeholder="MM/AA"
-                            fullwidth autoComplete="off"
+                            fullWidth autoComplete="off"
                             slotProps={{ htmlInput: { maxLength: 5 } }}
                             {...propsDoCampo('validade')} />
 
                             <TextField
                             label="CVV"
                             placeholder="123"
-                            fullwidth autoComplete="off"
+                            fullWidth autoComplete="off"
                             slotProps={{ htmlInput: { inputMode: 'numeric', maxLength: 3 } }}
                             {...propsDoCampo('cvv')} />
                         
