@@ -43,7 +43,7 @@ function Carrinho() {
                 <aside className={styles.lateral}>
                     <ResumoCompra quantidadeTotal={quantidadeTotal} valorTotal={valorTotal}>
                         <Botao component={Link} to="/pagamento" tamanho="large" larguraTotal>
-                        FinalizarCompra
+                        Finalizar Compra
                         </Botao>
                         <Link to="/produtos" className={styles.continuar}>
                         Continuar comprando
