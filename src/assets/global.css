@@ -1,0 +1,81 @@
+/*Estilos globais da loja*/
+
+:root {
+    /* paleta da loja */
+      --cor-primaria: #ee5a24;
+    --cor-primaria-escura: #c9441a;
+    --cor-primaria-clara: #fdeee7;
+    --cor-fundo: #fbf7f4;
+    --cor-superficie: #ffffff;
+    --cor-texto: #2b2320;
+    --cor-texto-suave: #6f625c;
+    --cor-borda: #eadfd8;
+    --cor-sucesso: #2e7d32;
+    --cor-erro: #c62828;
+    --cor-foco: #1f5fbf;
+    --cor-fundo-imagem: #f6f1ec;
+    --cor-rodape: #2b2320;
+    --cor-rodape-texto: #f3ece8;
+    --cor-rodape-suave: #c9bcb5;
+    --sombra-forte: 0 8px 22px rgba(43, 35, 32, 0.12);
+    
+
+    --raio: 12px;
+    --sombra: 0 2px 10px rgba(43, 35, 32, 0.08);
+    --largura-maxima: 1200px;
+
+    font-family:'Segoe UI', Roboto, 'helvetica Neue', Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+}
+
+:root[data-tema='escuro'] {
+    color-scheme: dark;
+    --cor-primaria: #ff7a45;
+    --cor-primaria-escura: #ff9a6c;
+    --cor-primaria-clara: #3a2a23;
+    --cor-fundo: #1c1715;
+    --cor-superficie: #2a2320;
+    --cor-texto: #f3ece8;
+    --cor-texto-suave: #c4b6ae;
+    --cor-borda: #433832;
+    --cor-sucesso: #7bc67f;
+    --cor-erro: #ff8a80;
+    --cor-foco: #8ab4ff;
+
+    --cor-fundo-imagem: #f6f1ec;
+    --cor-rodape: #120e0d;
+    --sombra: 0 2px 10px rgba(0, 0, 0, 0.35);
+    --sombra-forte: 0 8px 22px rgba(0, 0, 0, 0.5);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    background-color: var(--cor-fundo);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    line-height: 1.2;
+}
+
+a {
+    color: var(--cor-primaria-escura);
+}
+
+:focus-visible {
+    outline: 3px solid var(--cor-foco);
+    outline-offset: 2px;
+}

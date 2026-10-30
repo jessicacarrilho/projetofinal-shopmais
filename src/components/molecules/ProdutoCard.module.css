@@ -1,0 +1,67 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    overflow: hidden;
+    box-shadow: var(--sombra);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+    transform:translateY(-3px);
+    box-shadow: var(--sombra-forte);
+}
+
+.imagem {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: contain;
+    background-color: var(--cor-fundo-imagem);
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1rem;
+    flex: 1;
+}
+
+.categoria {
+    margin: 0;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--cor-texto-suave);
+}
+
+.nome {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.botao {
+    margin-top: auto;
+}
+
+.noCarrinho {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--cor-sucesso);
+    text-align: center;
+}
+
+.linkNome {
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+.linkNome:hover {
+    color: var(--cor-primaria-escura);
+    text-decoration: underline;
+}
+

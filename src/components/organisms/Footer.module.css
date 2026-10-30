@@ -1,0 +1,16 @@
+.footer {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    background-color: var(--cor-rodape);
+    color: var(--cor-rodape-texto);
+    font-size: 0.9rem; 
+}
+
+.footer p{
+    margin: 0.2rem 0;
+}
+
+.aviso {
+    color: var(--cor-rodape-suave);
+    font-size: 0.8rem;
+}

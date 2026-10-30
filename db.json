@@ -1,0 +1,112 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Vestido Midi Fluido",
+      "descricao": "Vestido midi em laise com caimento leve e alças reguláveis, perfeito para o verão.",
+      "preco": 189.90,
+      "categoria": "Roupas",
+      "imagem": "01-vestido-midi-fluido.svg",
+      "estoque": 5
+    },
+    {
+      "id": "2",
+      "nome": "Blazer Alfaiataria Slim",
+      "descricao": "Blazer estruturado com corte moderno e forro acetinado, ideal para o trabalho ou eventos.",
+      "preco": 249.90,
+      "categoria": "Roupas",
+      "imagem": "02-blazer-alfaiataria-slim.svg",
+      "estoque": 3
+    },
+    {
+      "id": "3",
+      "nome": "Calça Wide Leg Jeans",
+      "descricao": "Calça jeans de cintura alta com lavagem clássica e modelagem ampla ultra confortável.",
+      "preco": 159.90,
+      "categoria": "Roupas",
+      "imagem": "03-calca-wide-leg-jeans.svg",
+      "estoque": 7
+    },
+    {
+      "id": "4",
+      "nome": "Camisa de Linho Premium",
+      "descricao": "Camisa 100% linho respirável com botões de madrepérola e modelagem comfy.",
+      "preco": 139.90,
+      "categoria": "Roupas",
+      "imagem": "04-camisa-linho-premium.svg",
+      "estoque": 6
+    },
+    {
+      "id": "5",
+      "nome": "Sandália Salto Bloco",
+      "descricao": "Sandália em couro legítimo com salto bloco médio que garante elegância e estabilidade o dia todo.",
+      "preco": 179.90,
+      "categoria": "Calçados",
+      "imagem": "05-sandalia-salto-bloco.svg",
+      "estoque": 4
+    },
+    {
+      "id": "6",
+      "nome": "Sapatilha Bico Fino Confort",
+      "descricao": "Sapatilha clássica com palmilha acolchoada e acabamento em camurça macia.",
+      "preco": 119.90,
+      "categoria": "Calçados",
+      "imagem": "06-sapatilha-bico-fino.svg",
+      "estoque": 8
+    },
+    {
+      "id": "7",
+      "nome": "Tênis Casual Platform",
+      "descricao": "Tênis casual branco com solado plataforma reto, combinando com saias, vestidos e jeans.",
+      "preco": 199.90,
+      "categoria": "Calçados",
+      "imagem": "07-tenis-casual-platform.svg",
+      "estoque": 5
+    },
+    {
+      "id": "8",
+      "nome": "Bota Ankle Boot Couro",
+      "descricao": "Bota de cano curto com zíper lateral e salto geométrico, ideal para composições de outono.",
+      "preco": 289.00,
+      "categoria": "Calçados",
+      "imagem": "08-bota-ankle-boot.svg",
+      "estoque": 2
+    },
+    {
+      "id": "9",
+      "nome": "Bolsa Tote de Couro",
+      "descricao": "Bolsa grande estruturada com divisórias internas e alça transversal removível.",
+      "preco": 329.90,
+      "categoria": "Acessórios",
+      "imagem": "09-bolsa-tote-couro.svg",
+      "estoque": 4
+    },
+    {
+      "id": "10",
+      "nome": "Óculos de Sol Vintage Cat-Eye",
+      "descricao": "Óculos de sol com armação de acetato tartaruga e proteção UV400 nas lentes.",
+      "preco": 89.90,
+      "categoria": "Acessórios",
+      "imagem": "10-oculos-vintage-cat-eye.svg",
+      "estoque": 12
+    },
+    {
+      "id": "11",
+      "nome": "Cinto de Couro Fivela Gold",
+      "descricao": "Cinto fino de couro legítimo com fivela dourada minimalista para marcar a cintura.",
+      "preco": 59.90,
+      "categoria": "Acessórios",
+      "imagem": "11-cinto-couro-fivela-gold.svg",
+      "estoque": 15
+    },
+    {
+      "id": "12",
+      "nome": "Brinco de Argola Orgânica",
+      "descricao": "Par de brincos de argola com design abaulado e banho de ouro 18k antialérgico.",
+      "preco": 45.00,
+      "categoria": "Acessórios",
+      "imagem": "12-brinco-argola-organica.svg",
+      "estoque": 20
+    }
+  ]
+}

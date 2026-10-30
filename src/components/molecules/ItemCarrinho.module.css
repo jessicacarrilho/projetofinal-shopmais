@@ -1,0 +1,115 @@
+.item {
+    display: grid;
+    grid-template-columns: 84px 1px;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+}
+
+.imagem {
+    width: 84px;
+    aspect-ratio: 3 / 4;
+    object-fit: contain;
+    background-color: var(--cor-fundo-imagem);
+    border-radius: 8px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.nome {
+    font-weight: 600;
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+.nome:hover {
+    text-decoration: underline;
+}
+
+.unitario {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--cor-texto-suave);
+}
+
+.quantidade {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    border: 1.5px solid var(--cor-borda);
+    border-radius: 999px;
+    overflow: hidden; 
+}
+
+.botaoQtd {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: transparent;
+    font-size: 1.2rem;
+    color: var(--cor-texto);
+    cursor: pointer;
+}
+
+.botaoQtd:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.valorQtd {
+    min-width: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.aviso {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--cor-texto-suave);
+}
+
+.lateral {
+    grid-column: 1 /-1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.6rem;
+    border-top: 1px dashed var(--cor-borda);
+}
+
+.subtotal {
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+@media (min-width: 600px) {
+    .item {
+        grid-template-columns: 96px 1fr auto;
+    }
+
+    .imagem {
+        width: 96px;
+    }
+
+    .lateral {
+        grid-column: auto;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 0;
+        border-top: none;
+    }
+
+    .subtotal {
+        flex-direction: column;
+        align-items: flex-end;
+        gap:  0;
+    }
+}
