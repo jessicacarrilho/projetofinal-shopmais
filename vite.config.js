@@ -5,14 +5,4 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [react()],
 
-
-//Configuração do Vitest (testes)
-
-test: {
-  environment: 'jsdom',
-  globals: true,
-  setupFiles: './src/setupTests.js',
-  css: false,
-},
-
 })
